@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucas Cranach Archiv Übersicht</title>
+  </head>
+  <body>
+    <h1>Lucas Cranach Archiv Übersicht</h1>
+    <section>
+      <form action="">
+        <h2>Martyrium des hl. Erasmus</h2>
+        <fieldset>
+          <legend>Abbildung vom Gemälde</legend>
+          <img src="/img/bildnis-der-anna-cuspinian.jpg" />
+          <label for="bilddatei">Bilddatei</label>
+          <input type="file" name="bilddatei" id="bilddatei" />
+        </fieldset>
+        <fieldset>
+          <legend>Allgemeine Daten</legend>
+          <label for="datierung">Datierung</label>
+          <input type="date" name="datierung" id="datierung" />
+          <label for="owner">Eigentümer</label>
+          <input type="text" name="owner" id="owner" />
+          <label for="besitzer">Besitzer</label>
+          <input type="text" name="besitzer" id="besitzer" />
+          <label for="standort">Standort</label>
+          <input type="text" name="standort" id="standort" />
+        </fieldset>
+        <fieldset>
+          <legend>Weitere Informationen</legend>
+          <label for="size">Maße</label>
+          <textarea name="size" id="size" cols="30" rows="10"></textarea>
+          <label for="description">Kurzbeschreibung</label>
+          <textarea
+            name="description"
+            id="description"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Status</legend>
+          <label for="sichtbar">sichtbar</label>
+          <input type="radio" name="status" id="sichtbar" value="visible" />
+          <label for="nicht-sichtbar">nicht sichtbar</label>
+          <input
+            type="radio"
+            name="status"
+            id="nicht-sichtbar"
+            value="invisible"
+          />
+        </fieldset>
+        <fieldset>
+          <legend>Zuordnung Tour</legend>
+          <select name="tour" id="tour">
+            <option>Staatsgalerie im Schloss Johannisburg</option>
+            <option>Frankfurt, Städel Museum</option>
+          </select>
+        </fieldset>
+        <button type="submit">Speichern</button>
+        <button type="reset">Gemälde löschen</button>
+      </form>
+    </section>
+    <section>
+      <h2>Gemäldeübersicht</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Bezeichnung</th>
+            <th>Datierung</th>
+            <th>Tour</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Martyrium des hl. Erasmus</td>
+            <td>1516</td>
+            <td>Staatsgalerie im Schloss Johannisburg</td>
+          </tr>
+          <tr>
+            <td>rager Retabel [Mitteltafel, Fragment]: Hl. Margaretha</td>
+            <td>kurz nach 1520</td>
+            <td>Staatsgalerie im Schloss Johannisburg</td>
+          </tr>
+          <tr>
+            <td>Hl. Hieronymus</td>
+            <td>um 1520</td>
+            <td>Staatsgalerie im Schloss Johannisburg</td>
+          </tr>
+          <tr>
+            <td>Triptychon mit der Heiligen</td>
+            <td>1509</td>
+            <td>Frankfurt, Städel Museum</td>
+          </tr>
+          <tr>
+            <td>Triptychon mit der Heiligen Sippe [Mitteltafel]</td>
+            <td>1509</td>
+            <td>Frankfurt, Städel Museum</td>
+          </tr>
+        </tbody>
+      </table>
+      <button>Gemälde hinzufügen</button>
+    </section>
+  </body>
+</html>
