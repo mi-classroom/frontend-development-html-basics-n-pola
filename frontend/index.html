@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tour</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link rel="stylesheet" href="/styles/cda-base.css" />
+    <link rel="stylesheet" href="./styles/10-normalize.css" />
+    <link rel="stylesheet" href="./styles/20-fonts.css" />
+    <link rel="stylesheet" href="./styles/30-base.css" />
+    <link rel="stylesheet" href="./styles/40-variable.css" />
+    <link rel="stylesheet" href="./styles/50-components.css" />
     <link
       href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap"
       rel="stylesheet"
@@ -17,12 +17,20 @@
   <body>
     <header>
       <nav>
+        <a class="nav-icon" href="/"
+          >Lucas Cranach<span>Digital Archive</span></a
+        >
         <ul>
-          <li><img alt="Icon Back" src="/icons/back.svg" /></li>
-          <li><a href="/">Tour</a></li>
-          <li><img alt="Icon Pin" src="/icons/pin.svg" /></li>
-          <li><img alt="Icon Help" src="/icons/help.svg" /></li>
-          <li><img alt="Icon Settings" src="/icons/settings.svg" /></li>
+          <li><a href="/">Timeline</a></li>
+          <li><a href="/">Standorte</a></li>
+          <li><a href="/">Merkliste</a></li>
+          <li><a href="/">Einstellung</a></li>
+          <li>
+            <a href="/"><img alt="Icon Pin" src="./icons/pin.svg" /></a>
+          </li>
+          <li>
+            <a href="/"><img alt="Icon Pin" src="./icons/settings.svg" /></a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -222,5 +230,10 @@
         </figcaption>
       </figure>
     </main>
+    <div class="floating-button">
+      <img alt="Icon Pin" src="./icons/back.svg" />
+      <img alt="Icon Pin" src="./icons/help.svg" />
+      <img alt="Icon Pin" src="./icons/speaker.svg" />
+    </div>
   </body>
 </html>

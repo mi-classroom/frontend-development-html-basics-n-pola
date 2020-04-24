@@ -1,0 +1,36 @@
+figure {
+  background: #fff;
+  margin: 0;
+  display: flex;
+  flex-flow: row;
+  grid-column: span 3;
+}
+
+figcaption {
+  padding: var(--spacing-xs) var(--spacing-s);
+}
+
+figure img {
+  object-fit: cover;
+  width: 150px;
+}
+
+.floating-button {
+  position: fixed;
+  background: #ffcc00;
+  border-radius: 25px;
+  padding: var(--spacing-m);
+  display: flex;
+  bottom: 50px;
+  margin: 0 auto;
+  justify-self: center;
+  right: 0;
+  left: 0;
+  width: 206px;
+  box-sizing: border-box;
+  box-shadow: var(--shadow);
+}
+
+.floating-button img:nth-child(n + 2) {
+  margin-left: var(--spacing-xl);
+}
