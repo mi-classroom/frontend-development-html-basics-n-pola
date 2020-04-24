@@ -1,37 +1,3 @@
-* {
-  font-family: "IBM Plex Sans", sans-serif;
-  line-height: 120%;
-  color: #000;
-}
-
-h1 {
-  font-size: var(--font-h1);
-  font-weight: 600;
-}
-
-h2 {
-  font-size: var(--font-h2);
-  margin: 0;
-  font-weight: 600;
-}
-
-h3 {
-  font-size: var(--font-h3);
-  font-weight: 800;
-  margin: 0;
-}
-
-h4 {
-  font-size: var(--font-h4);
-  font-weight: bold;
-  margin: 0;
-}
-
-p {
-  font-size: var(--font-p);
-  margin: 8px 0;
-}
-
 header {
   background: var(--color-highlight);
 }
@@ -97,40 +63,4 @@ main {
   padding: 50px;
   max-width: 1024px;
   margin: 0 auto;
-}
-
-figure {
-  background: #fff;
-  margin: 0;
-  display: flex;
-  flex-flow: row;
-  grid-column: span 3;
-}
-
-figcaption {
-  padding: var(--spacing-xs) var(--spacing-s);
-}
-
-figure img {
-  object-fit: cover;
-  width: 150px;
-}
-
-.floating-button {
-  position: fixed;
-  background: #ffcc00;
-  border-radius: 25px;
-  padding: var(--spacing-m);
-  display: flex;
-  bottom: 50px;
-  margin: 0 auto;
-  justify-self: center;
-  right: 0;
-  left: 0;
-  width: 206px;
-  box-sizing: border-box;
-}
-
-.floating-button img:nth-child(n + 2) {
-  margin-left: var(--spacing-xl);
 }
