@@ -38,9 +38,9 @@ header {
 
 nav {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
-  padding: 0 50px;
-  height: 80px;
+  padding: 10px 50px;
   align-items: center;
   max-width: 1024px;
   margin: 0 auto;
@@ -92,7 +92,7 @@ nav a:hover:after {
 main {
   background: #efefef;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
   grid-gap: 40px;
   padding: 50px;
   max-width: 1024px;
@@ -103,8 +103,8 @@ figure {
   background: #fff;
   margin: 0;
   display: flex;
-  flex-flow: column;
-  grid-column: span 2;
+  flex-flow: row;
+  grid-column: span 3;
 }
 
 figcaption {
@@ -113,8 +113,7 @@ figcaption {
 
 figure img {
   object-fit: cover;
-  width: 100%;
-  height: 150px;
+  width: 150px;
 }
 
 .floating-button {
